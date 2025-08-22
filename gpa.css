@@ -1,0 +1,202 @@
+
+
+  /*  
+    ===============================================
+    CSS: Styles for layout, visuals, and animations
+    Each major block is explained with comments.
+    ===============================================
+   
+
+*/
+
+/* 1) RESET
+      - Remove default margins/padding and set border-box sizing so widths include padding/border.
+    */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /*
+      2) BODY BASE STYLES
+      - Use a clean sans-serif font
+      - Make the page take full height
+      - Center the main container horizontally, start at top vertically
+    */
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      color: #000;
+      height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 20px;
+    }
+
+    /*
+      3) BACKGROUND VIDEO
+      - Full-screen looping video behind everything.
+      - object-fit: cover ensures it crops to fill without stretching.
+    */
+    video.bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2; /* behind all elements */
+    }
+
+    /*
+      4) OVERLAY
+      - A semi-transparent color overlay to improve text contrast on video.
+    */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(58, 12, 163, 0.6);
+      z-index: -1; /* between video and content */
+    }
+  .main-container {
+    margin-top: 50px;
+    padding: 100px;
+  }
+
+    /*
+      5) MAIN CONTAINER
+      - Slightly translucent white card with rounded corners and drop shadow.
+      - Max width keeps content readable on large screens.
+    */
+    .container {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 16px;
+      width: 100%;
+      max-width: 700px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      text-align: center;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #3a0ca3;
+      font-size: 1.8rem;
+    }
+    h2 img{
+        height: 50px;
+        width: 50px;
+        margin-top: 1px;
+    }
+
+    /*
+      6) ROW LAYOUT
+      - Each course input row uses flex layout and wraps on small screens.
+    */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 10px 0;
+      justify-content: center;
+      animation: slideIn 0.4s ease-in-out;
+    }
+
+    /*
+      7) FORM CONTROLS
+      - Smooth focus effect + subtle scale on focus.
+    */
+    input, select {
+      padding: 8px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      flex: 1;
+      min-width: 120px;
+      font-size: 14px;
+      transition: transform 0.2s;
+    }
+
+    input:focus, select:focus {
+      outline: none;
+      border-color: #7209b7;
+      transform: scale(1.02);
+    }
+
+    /*
+      8) BUTTONS
+      - Shared base styles and subtle hover scale feedback.
+    */
+    button {
+      padding: 8px 14px;
+       margin-bottom: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    /* Specific button colors */
+    .add { background: #f72585; color: white; }
+    .calc { background: #3a0ca3; color: white; }
+    .del { background: #d00000; color: white; }
+
+    /*
+      9) TABLE STYLES
+      - Simple bordered table with head/body/foot sections.
+    */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th { background: #eee; }
+    tfoot td { font-weight: bold; background: #ddd; }
+
+    /*
+      10) ANIMATIONS
+      - slideIn for rows, fadeIn for container/table.
+    */
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    /*
+      11) RESPONSIVE DESIGN
+      - On narrow screens, stack controls vertically and let them fill width.
+    */
+    @media (max-width: 600px) {
+      .row {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      input, select, button {
+        width: 100%;
+      }
+    }
