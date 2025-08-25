@@ -5,11 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Responsive GPA Calculator (Commented)</title>
   <link rel="icon" type="image/png" href="images.png">
-  <link rel="stylesheet" href="gpa.css">
 
-  <style>
-   
-  </style>
+  <!--
+    ===============================================
+    CSS: Styles for layout, visuals, and animations
+    Each major block is explained with comments.
+    ===============================================
+  -->
+<link rel="stylesheet" href="gpa.css">
 </head>
 <body>
   <!--
@@ -17,20 +20,20 @@
     PAGE STRUCTURE (HTML)
     =====================
   -->
-     <div class="main-container">
 
   <!-- Background video loops silently behind the interface -->
   <video class="bg-video" autoplay muted loop>
     <source src="https://cdn.pixabay.com/video/2021/06/08/74828-553529904_large.mp4" type="video/mp4">
     Your browser does not support HTML5 video.
   </video>
+  <div class="main-container">
 
   <!-- Semi-transparent overlay improves readability on top of the video -->
   <div class="overlay"></div>
 
   <!-- Main content card -->
   <div class="container">
-    <h2>GPA Calculator  <img src="./images.png" alt="calculater image"></h2>
+    <h2>GPA Calculator <img src="images.png" alt="calculator image"></h2>
 
     <!-- Dynamic rows (course, credits, grade) will be inserted here by JS -->
     <div id="course-container"></div>
@@ -39,15 +42,19 @@
     <div style="margin-top: 10px;">
       <button class="add" onclick="addCourse()">+ Add</button>
       <button class="calc" onclick="calculateGPA()">✔ Calculate</button>
+      <button class="reload" onclick="clearall()">()Reset</button>
     </div>
 
     <!-- GPA result table (built dynamically) will appear here -->
     <div id="result"></div>
   </div>
   </div>
-  </div>
-  <script src="gpa.js"></script>
 
-   
+  <!--
+    ===============================
+    JAVASCRIPT: App logic & helpers
+    ===============================
+  -->
+<script src="gpa.js"></script>
 </body>
 </html>

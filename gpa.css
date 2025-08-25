@@ -1,15 +1,6 @@
 
-
-  /*  
-    ===============================================
-    CSS: Styles for layout, visuals, and animations
-    Each major block is explained with comments.
-    ===============================================
-   
-
-*/
-
-/* 1) RESET
+    /*
+      1) RESET
       - Remove default margins/padding and set border-box sizing so widths include padding/border.
     */
     * {
@@ -64,16 +55,18 @@
       background: rgba(58, 12, 163, 0.6);
       z-index: -1; /* between video and content */
     }
-  .main-container {
-    margin-top: 50px;
-    padding: 100px;
-  }
 
     /*
       5) MAIN CONTAINER
       - Slightly translucent white card with rounded corners and drop shadow.
       - Max width keeps content readable on large screens.
     */
+
+
+    .main-container{ 
+      padding-top: 200px;
+
+    }
     .container {
       background: rgba(255, 255, 255, 0.9);
       padding: 20px;
@@ -91,9 +84,8 @@
       font-size: 1.8rem;
     }
     h2 img{
-        height: 50px;
-        width: 50px;
-        margin-top: 1px;
+      width: 50px;
+      height: 50px;
     }
 
     /*
@@ -134,8 +126,8 @@
       - Shared base styles and subtle hover scale feedback.
     */
     button {
+      margin-top: 5px;
       padding: 8px 14px;
-       margin-bottom: 10px;
       border: none;
       border-radius: 8px;
       cursor: pointer;
@@ -151,6 +143,7 @@
     .add { background: #f72585; color: white; }
     .calc { background: #3a0ca3; color: white; }
     .del { background: #d00000; color: white; }
+    .reload {background :#f48c06; color:white;}
 
     /*
       9) TABLE STYLES
@@ -192,7 +185,7 @@
     */
     @media (max-width: 600px) {
       .row {
-        flex-direction: column;
+        flex-direction: ROW;
         align-items: stretch;
       }
 
@@ -200,3 +193,4 @@
         width: 100%;
       }
     }
+ 
