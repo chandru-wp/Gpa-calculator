@@ -1,92 +1,61 @@
-<!DOCTYPE html>
+
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Responsive GPA Calculator</title>
-  <link rel="stylesheet" href="main.css">
- 
+  <title>Responsive GPA Calculator (Commented)</title>
+  <link rel="icon" type="image/png" href="images.png">
+
+  <!--
+    ===============================================
+    CSS: Styles for layout, visuals, and animations
+    Each major block is explained with comments.
+    ===============================================
+  -->
+<link rel="stylesheet" href="gpa.css">
 </head>
 <body>
+  <!--
+    =====================
+    PAGE STRUCTURE (HTML)
+    =====================
+  -->
+
+  <!-- Background video loops silently behind the interface -->
   <video class="bg-video" autoplay muted loop>
     <source src="https://cdn.pixabay.com/video/2021/06/08/74828-553529904_large.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
   </video>
+  <div class="main-container">
+
+  <!-- Semi-transparent overlay improves readability on top of the video -->
   <div class="overlay"></div>
-  
-  <div class="maincont">
+
+  <!-- Main content card -->
   <div class="container">
-    <h2> <img src="./images2.jpeg" alt="calcultor image">  &nbsp; Bharathidasan College of Arts and Science</h2>
+    <h2>GPA Calculator <img src="images.png" alt="calculator image"></h2>
 
-    <h3>GPA Calculator <img src="./images.png" alt="calcultor image"></h3>
-
-    <!-- Department and Semester Select -->
-    <div class="controls">
-      <select id="department">
-        
-    <option value="">Select Course</option>
-
-    <!-- UG Courses -->
-    <option value="BA English">BA (English)</option>
-    <option value="BBA IB">BBA</option>
-    <option value="B.Com">B.Com</option>
-    <option value="B.Com(CA)">B.Com (CA)</option>
-    <option value="B.Com PA">B.Com (PA)</option>
-    <option value="BCA">B.CA</option>
-    <option value="Maths">B.Sc (Maths)</option>
-    <option value="AI&DS">B.Sc (CS - AI & DS)</option>
-     <option value="CS">B.Sc (CS )</option>
-    <option value="IT">B.Sc (IT)</option>
-    <option value="CDF">B.Sc (CDF)</option>
-    <option value="BC">B.Sc (Biochemistry)</option>
-    <option value="CT">B.Sc (CT)</option>
-
-    <!-- PG Courses -->
-    <option value="MSC CS">M.Sc (CS)</option>
-    <option value="MSC CDF">M.Sc (Costume Design & Fashion)</option>
-    <option value="MSC Biochemistry">M.Sc (Biochemistry)</option>
-    <option value="M.Sc Mathematics">M.Sc (Maths)</option>
-    <option value="M.A English Literature">M.A (English)</option>
-    <option value="M.Com Computer Applications">M.Com (CA)</option>
-
-    <!-- Ph.D -->
-    <!-- <option value="Ph.D Biochemistry">Ph.D (Biochemistry)</option>
-    <option value="Ph.D Commerce">Ph.D (Commerce)</option>
-    <option value="Ph.D CS">Ph.D (CS)</option> -->
-</select>
-
-
-      </select>
-      <select id="semester">
-        <option value="">Select Semester</option>
-        <option value="1">Semester 1</option>
-        <option value="2">Semester 2</option>
-        <option value="3">Semester 3</option>
-        <option value="4">Semester 4</option>
-        <option value="5">Semester 5</option>
-        <option value="6">Semester 6</option>
-      </select>
-    </div>
-
-    <!-- Dynamic rows -->
+    <!-- Dynamic rows (course, credits, grade) will be inserted here by JS -->
     <div id="course-container"></div>
 
-    <!-- Buttons -->
-    <div>
-      <button onclick="addCourse()">+ Add</button>
-      <button onclick="calculateGPA()">✔ Calculate</button>
-      <button onclick="clearAll()">⟳ Reset</button>
+    <!-- Action buttons: add a new row or compute GPA -->
+    <div style="margin-top: 10px;">
+      <button class="add" onclick="addCourse()">+ Add</button>
+      <button class="calc" onclick="calculateGPA()">✔ Calculate</button>
+      <button class="reload" onclick="clearall()">()Reset</button>
     </div>
 
-    <!-- GPA Result -->
+    <!-- GPA result table (built dynamically) will appear here -->
     <div id="result"></div>
-    <div class="ancollage">
-      <h3>Another college </h3>
-     <button class="link"> <a href="./gpa.html" target="_self">link</a></button>
-    </div>
-
   </div>
-</div>
+  </div>
 
-<script src="./main.js"></script>
+  <!--
+    ===============================
+    JAVASCRIPT: App logic & helpers
+    ===============================
+  -->
+<script src="gpa.js"></script>
 </body>
 </html>
