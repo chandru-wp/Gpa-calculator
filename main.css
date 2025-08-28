@@ -1,0 +1,136 @@
+ /* ========= BASIC STYLING ========= */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  height: 100%;
+  overflow-x: hidden;
+}
+h3 img ,h2  img{
+        height: 50px;
+        width: 50px;
+        margin-top: 1px;
+        border-radius: 10px;
+        
+  
+}
+.bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  margin: 40px auto;
+}
+
+h3,h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+select, input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  width: 150px;
+}
+
+button  {
+  padding: 10px 15px;
+  margin: 5px;
+  background: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-decoration: none;
+  border: none;
+  font-size: 1rem;
+  
+
+
+}
+button  a{
+  color: white;
+  text-decoration: none;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.row input, .row select {
+  flex: 1;
+  width: auto;
+}
+
+.row button {
+  background: #e74c3c;
+}
+
+#result table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#result th, #result td {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 8px;
+  text-align: center;
+}
+
+/* ========= RESPONSIVE ========= */
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column;  /* <-- fixed here */
+    align-items: stretch;
+  }
+
+  .container {
+    max-width: 95%;  /* make it shrink smoothly */
+  }
+}

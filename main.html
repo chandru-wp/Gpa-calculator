@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive GPA Calculator</title>
+  <link rel="stylesheet" href="main.css">
+ 
+</head>
+<body>
+  <video class="bg-video" autoplay muted loop>
+    <source src="https://cdn.pixabay.com/video/2021/06/08/74828-553529904_large.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+  
+  <div class="maincont">
+  <div class="container">
+    <h2> <img src="./images2.jpeg" alt="calcultor image">  &nbsp; Bharathidasan College of Arts and Science</h2>
+
+    <h3>GPA Calculator <img src="./images.png" alt="calcultor image"></h3>
+
+    <!-- Department and Semester Select -->
+    <div class="controls">
+      <select id="department">
+        
+    <option value="">Select Course</option>
+
+    <!-- UG Courses -->
+    <option value="BA English">BA (English)</option>
+    <option value="BBA IB">BBA</option>
+    <option value="B.Com">B.Com</option>
+    <option value="B.Com(CA)">B.Com (CA)</option>
+    <option value="B.Com PA">B.Com (PA)</option>
+    <option value="BCA">B.CA</option>
+    <option value="Maths">B.Sc (Maths)</option>
+    <option value="AI&DS">B.Sc (CS - AI & DS)</option>
+     <option value="CS">B.Sc (CS )</option>
+    <option value="IT">B.Sc (IT)</option>
+    <option value="CDF">B.Sc (CDF)</option>
+    <option value="BC">B.Sc (Biochemistry)</option>
+    <option value="CT">B.Sc (CT)</option>
+
+    <!-- PG Courses -->
+    <option value="MSC CS">M.Sc (CS)</option>
+    <option value="MSC CDF">M.Sc (Costume Design & Fashion)</option>
+    <option value="MSC Biochemistry">M.Sc (Biochemistry)</option>
+    <option value="M.Sc Mathematics">M.Sc (Maths)</option>
+    <option value="M.A English Literature">M.A (English)</option>
+    <option value="M.Com Computer Applications">M.Com (CA)</option>
+
+    <!-- Ph.D -->
+    <!-- <option value="Ph.D Biochemistry">Ph.D (Biochemistry)</option>
+    <option value="Ph.D Commerce">Ph.D (Commerce)</option>
+    <option value="Ph.D CS">Ph.D (CS)</option> -->
+</select>
+
+
+      </select>
+      <select id="semester">
+        <option value="">Select Semester</option>
+        <option value="1">Semester 1</option>
+        <option value="2">Semester 2</option>
+        <option value="3">Semester 3</option>
+        <option value="4">Semester 4</option>
+        <option value="5">Semester 5</option>
+        <option value="6">Semester 6</option>
+      </select>
+    </div>
+
+    <!-- Dynamic rows -->
+    <div id="course-container"></div>
+
+    <!-- Buttons -->
+    <div>
+      <button onclick="addCourse()">+ Add</button>
+      <button onclick="calculateGPA()">✔ Calculate</button>
+      <button onclick="clearAll()">⟳ Reset</button>
+    </div>
+
+    <!-- GPA Result -->
+    <div id="result"></div>
+    <div class="ancollage">
+      <h3>Another college </h3>
+     <button class="link"> <a href="index.html" target="_self">link</a></button>
+    </div>
+
+  </div>
+</div>
+
+<script src="./main.js"></script>
+</body>
+</html>
