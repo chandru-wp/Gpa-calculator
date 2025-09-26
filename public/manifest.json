@@ -1,8 +1,8 @@
 {
-  "name": "SpotGPT",
-  "short_name": "SpotGPT",
+  "name": "GPACLCULATOR-COPY",
+  "short_name": "GPACALC",
   "description": "A Spotify-like music player powered by GPT.",
-  "start_url": ".",
+  "start_url": "./GPACLCULATOR-COPY",
   "display": "standalone",
   "background_color": "#121212",
   "theme_color": "#1db954",
