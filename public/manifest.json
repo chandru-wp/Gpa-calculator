@@ -14,12 +14,12 @@
     {
       "src": "/GPACALCULATOR-COPY/image4.jpg",
       "sizes": "150x150",
-      "type": "image/jpeg"
+      "type": "image/jpg"
     },
     {
       "src": "/GPACALCULATOR-COPY/image3.jpg",
       "sizes": "512x512",
-      "type": "image/jpeg"
+      "type": "image/jpg"
     }
   ]
 }
