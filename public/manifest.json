@@ -1,6 +1,6 @@
  {
-    "name": "Spotify",
-    "short_name": "Spotify",  
+    "name": " Gpa-calculator",
+    "short_name": "Gpa-calculator",  
     "start_url": "/Gpa-calculator/",
     "display": "standalone",
     "orientation": "portrait",
@@ -11,14 +11,14 @@
     "icons": [
        
       {
-        "src": "/Gpa-calculator/image4.png",
-        "type": "image/png",
+        "src": "/Gpa-calculator/image4.jpg",
+        "type": "image/jpg",
         "sizes": "192x192"
       },
        
       {
-        "src": "/Gpa-calculator/image3.png ",
-        "type": "image/png",
+        "src": "/Gpa-calculator/image3.jpg ",
+        "type": "image/jpg",
         "sizes": "512x512"
       }
     ]
