@@ -12,10 +12,10 @@
     {
       "src": "/GPACALCULATOR-COPY/image6.png" ,
       "sizes": "192x192",
-      "type": "image/jpg"
+      "type": "image/png"
     },
     {
-      "src": "/GPACALCULATOR-COPY/Calculator-icon.png ",
+      "src": "/GPACALCULATOR-COPY/Calculator-icon.png",
       "sizes": "512x512",
       "type": "image/png"
     }
