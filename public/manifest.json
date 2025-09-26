@@ -10,14 +10,14 @@
   "scope": "/GPACALCULATOR-COPY/",
   "icons": [
     {
-      "src": "image4.png" ,
+      "src": " image4.jpg" ,
       "sizes": "150x150",
-      "type": "image/png"
+      "type": "image/jpg"
     },
     {
-      "src": "image3.png",
+      "src": "image3.jpg",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/jgp"
     }
      
   ],
