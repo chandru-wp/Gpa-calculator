@@ -15,6 +15,9 @@ h3 img ,h2  img{
         
   
 }
+ img{
+  margin-top: 500px;
+ }
 .bg-video {
   position: fixed;
   right: 0;
