@@ -1,25 +1,25 @@
  {
-    "name": " Gpa-calculator",
-    "short_name": "Gpa-calculator",  
-    "start_url": "/Gpa-calculator/",
-    "display": "standalone",
-    "orientation": "portrait",
-    "background_color": "#000000",
-    "theme_color": "#000000",
-    "description": "A Spotify clone built with React and Tailwind CSS.",
-    "lang": "en-US",
-    "icons": [
-       
-      {
-        "src": "/Gpa-calculator/image4.jpg",
-        "type": "image/jpg",
-        "sizes": "192x192"
-      },
-       
-      {
-        "src": "/Gpa-calculator/image3.jpg ",
-        "type": "image/jpg",
-        "sizes": "512x512"
-      }
-    ]
+  "name": "GPACLCULATOR-COPY",
+  "short_name": "GPACALC",
+  "start_url": "/Gpa-calculator/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#121212",
+  "theme_color": "#1db954",
+  "id": "GPACALCULATOR-COPY",
+  "lang": "en-US",
+  "description": "GPACALC is a Spotify-like music player powered by GPT.",
+  "scope": "/GPACALCULATOR-COPY/",
+  "icons": [
+    {
+      "src": "/GPACALCULATOR-COPY/image4.jpg",
+      "sizes": "150x150",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/GPACALCULATOR-COPY/image3.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
 }
