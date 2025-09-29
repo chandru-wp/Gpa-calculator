@@ -9,15 +9,13 @@
     "description": "A GPA calculator built with React and Tailwind CSS.",
     "lang": "en-US",
     "icons": [
-      
       {
-        "src": "/Gpa-calculator/icon192.png",
+        "src": "/gpacalculator/icon192.png",
         "type": "image/png",
         "sizes": "192x192"
       },
-     
       {
-        "src": "/Gpa-calculator/icon512.png",
+        "src": "/gpacalculator/icon512.png",
         "type": "image/png",
         "sizes": "512x512"
       }
