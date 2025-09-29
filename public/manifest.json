@@ -1,25 +1,29 @@
  {
-  "name": "GPACLCULATOR-COPY",
-  "short_name": "GPACALC",
-  "start_url": "/Gpa-calculator/",
-  "display": "standalone",
-  "orientation": "any",
-  "background_color": "#121212",
-  "theme_color": "#1db954",
-  "id": "GPACALCULATOR-COPY",
-  "lang": "en-US",
-  "description": "GPACALC is a Spotify-like music player powered by GPT.",
-  "scope": "/GPACALCULATOR-COPY/",
-  "icons": [
-    {
-      "src": "/GPACALCULATOR-COPY/image4.jpg",
-      "sizes": "150x150",
-      "type": "image/jpg"
-    },
-    {
-      "src": "/GPACALCULATOR-COPY/image3.jpg",
-      "sizes": "512x512",
-      "type": "image/jpg"
-    }
-  ]
+    "name": "GPA Calculator",
+    "short_name": "GPA Calc",
+    "start_url": "/Gpa-calculator/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#000000",
+    "theme_color": "#000000",
+    "description": "A GPA calculator built with React and Tailwind CSS.",
+    "lang": "en-US",
+    "icons": [
+      
+      {
+        "src": "/Gpa-calculator/playly-150x150.jpeg",
+        "type": "image/jpeg",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/Gpa-calculator/playly-150x150.jpeg",
+        "type": "image/jpeg",
+        "sizes": "150x150"
+      },
+      {
+        "src": "/Gpa-calculator/playly-512x512.jpeg",
+        "type": "image/jpeg",
+        "sizes": "512x512"
+      }
+    ]
 }
